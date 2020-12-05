@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>替换 - xyz_ak_wf</title>
+<title>替换 - 咸鱼のblog</title>
 <link rel="shortcut icon" href="https://z-y-x233.github.io/favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
 <link rel="stylesheet" href="https://z-y-x233.github.io/media/css/tailwind.css">
 <link rel="stylesheet" href="https://z-y-x233.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="替换 - xyz_ak_wf - Atom Feed" href="https://z-y-x233.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="替换 - 咸鱼のblog - Atom Feed" href="https://z-y-x233.github.io/atom.xml">
 
     
 
@@ -18,7 +18,7 @@
 给定一个长度为nnn的整数序列，对这个序列进行qqq次操作
 每次操作给出两个数a,ba, ba,b，代表把序列中的aaa全部替换为bbb
 因为我们需要求的答案为数列和，而对于每一次的操作qqq,会把整个数组和和sumsumsum减..." />
-  <meta property="og:title" content="替换 - xyz_ak_wf">
+  <meta property="og:title" content="替换 - 咸鱼のblog">
   <meta property="og:description" content="题目描述
 给定一个长度为nnn的整数序列，对这个序列进行qqq次操作
 每次操作给出两个数a,ba, ba,b，代表把序列中的aaa全部替换为bbb
@@ -28,7 +28,7 @@
   <meta property="og:image" content="https://z-y-x233.github.io/images/avatar.png">
   <meta property="og:image:height" content="630">
   <meta property="og:image:width" content="1200">
-  <meta name="twitter:title" content="替换 - xyz_ak_wf">
+  <meta name="twitter:title" content="替换 - 咸鱼のblog">
   <meta name="twitter:description" content="题目描述
 给定一个长度为nnn的整数序列，对这个序列进行qqq次操作
 每次操作给出两个数a,ba, ba,b，代表把序列中的aaa全部替换为bbb
@@ -51,7 +51,7 @@
 <body>
   <div class="antialiased flex flex-col min-h-screen" id="app">
     <a href="https://z-y-x233.github.io" class="fixed top-0 left-0 mt-4 bg-black text-white dark:text-gray-700 dark:bg-yellow-50 dark:hover:bg-black dark:hover:text-white inline-flex p-2 pl-8 hover:text-gray-700 hover:bg-yellow-50 font-bold z-10 transition-fast animated fadeInLeft">
-      xyz_ak_wf
+      咸鱼のblog
     </a>
     <div class="max-w-4xl w-full mx-auto">
       <div class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8">
@@ -84,17 +84,15 @@
 这样对于每一次操作<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span></span></span></span>，只需要花费<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>的时间，对于每次操作后输出<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi><mi>u</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">sum</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault">u</span><span class="mord mathdefault">m</span></span></span></span>即可<br>
 代码</p>
 <pre><code class="language-cpp">
-#include&lt;bits/stdc++.h&gt;
 
-using namespace std;
-
-const int N = 100005;
+#include&lt;stdio.h&gt;
+#define N  100005
 int e[N];
 long long sum = 0;
 
 int main(void) {
 	int  n, q, x, a, b;
-	cin &gt;&gt; n &gt;&gt; q;
+	scanf(&quot;%d%d&quot;,&amp;n,&amp;q);
 	for (int i = 0; i &lt; n; ++i) {
 		scanf(&quot;%d&quot;, &amp;x);
 		e[x]++;

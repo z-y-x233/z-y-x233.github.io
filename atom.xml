@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://z-y-x233.github.io</id>
-    <title>xyz_ak_wf</title>
-    <updated>2020-12-04T08:38:53.892Z</updated>
+    <title>咸鱼のblog</title>
+    <updated>2020-12-05T14:20:26.138Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://z-y-x233.github.io"/>
     <link rel="self" href="https://z-y-x233.github.io/atom.xml"/>
     <subtitle>冲冲冲</subtitle>
     <logo>https://z-y-x233.github.io/images/avatar.png</logo>
     <icon>https://z-y-x233.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, xyz_ak_wf</rights>
+    <rights>All rights reserved 2020, 咸鱼のblog</rights>
     <entry>
-        <title type="html"><![CDATA[旅行]]></title>
-        <id>https://z-y-x233.github.io/post/lu-xing/</id>
-        <link href="https://z-y-x233.github.io/post/lu-xing/">
+        <title type="html"><![CDATA[周赛3]]></title>
+        <id>https://z-y-x233.github.io/post/zhou-sai/</id>
+        <link href="https://z-y-x233.github.io/post/zhou-sai/">
         </link>
-        <updated>2020-12-04T07:12:26.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[替换]]></title>
-        <id>https://z-y-x233.github.io/post/ti-huan/</id>
-        <link href="https://z-y-x233.github.io/post/ti-huan/">
-        </link>
-        <updated>2020-11-23T10:38:23.000Z</updated>
+        <updated>2020-12-05T13:52:08.000Z</updated>
     </entry>
 </feed>
