@@ -14,28 +14,34 @@
 
     
 
-  <meta name="description" content="写在前面：可能会有些代码头文件是c++的，那是因为我懒，不想改了，代码都是纯c的，复制代码别问为啥报错
+  <meta name="description" content="写在前面：可能会有些代码头文件是c++的，那是因为我懒，不想改了，代码都是纯c的。难度排序大概是GDEACHBF?
+
 目录在右下角
+
 A 递归式
 题目描述
-fn={an=0bn=1(1+fn−1)fn−2n&amp;gt;1f_n = \begin{cases} ..." />
+fn={an=0bn=1(1+fn−1)fn−2n&amp;gt;1f_n = \begin..." />
   <meta property="og:title" content="题解 2020级HAUT新生周赛(三) - 咸鱼のblog">
-  <meta property="og:description" content="写在前面：可能会有些代码头文件是c++的，那是因为我懒，不想改了，代码都是纯c的，复制代码别问为啥报错
+  <meta property="og:description" content="写在前面：可能会有些代码头文件是c++的，那是因为我懒，不想改了，代码都是纯c的。难度排序大概是GDEACHBF?
+
 目录在右下角
+
 A 递归式
 题目描述
-fn={an=0bn=1(1+fn−1)fn−2n&amp;gt;1f_n = \begin{cases} ..." />
+fn={an=0bn=1(1+fn−1)fn−2n&amp;gt;1f_n = \begin..." />
   <meta property="og:type" content="articles">
   <meta property="og:url" content="https://z-y-x233.github.io/post/zhou-sai/" />
   <meta property="og:image" content="https://z-y-x233.github.io/images/avatar.png">
   <meta property="og:image:height" content="630">
   <meta property="og:image:width" content="1200">
   <meta name="twitter:title" content="题解 2020级HAUT新生周赛(三) - 咸鱼のblog">
-  <meta name="twitter:description" content="写在前面：可能会有些代码头文件是c++的，那是因为我懒，不想改了，代码都是纯c的，复制代码别问为啥报错
+  <meta name="twitter:description" content="写在前面：可能会有些代码头文件是c++的，那是因为我懒，不想改了，代码都是纯c的。难度排序大概是GDEACHBF?
+
 目录在右下角
+
 A 递归式
 题目描述
-fn={an=0bn=1(1+fn−1)fn−2n&amp;gt;1f_n = \begin{cases} ...">
+fn={an=0bn=1(1+fn−1)fn−2n&amp;gt;1f_n = \begin...">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://z-y-x233.github.io/post/zhou-sai/">
 
@@ -72,8 +78,10 @@ fn={an=0bn=1(1+fn−1)fn−2n&amp;gt;1f_n = \begin{cases} ...">
           
         </div>
         <div class="markdown mb-8" v-pre>
-          <p><strong>写在前面</strong>：可能会有些代码头文件是c++的，那是因为我懒，不想改了，代码都是纯c的，复制代码别问为啥报错<br>
-<strong>目录在右下角</strong></p>
+          <p><strong>写在前面</strong>：可能会有些代码头文件是c++的，那是因为我懒，不想改了，代码都是纯c的。难度排序大概是<strong>GDEACHBF</strong>?</p>
+<blockquote>
+<p>目录在右下角</p>
+</blockquote>
 <h1 id="a-递归式">A 递归式</h1>
 <h2 id="题目描述">题目描述</h2>
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>=</mo><mrow><mo fence="true">{</mo><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>a</mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>b</mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mfrac><mrow><mo>(</mo><mn>1</mn><mo>+</mo><msub><mi>f</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>)</mo></mrow><msub><mi>f</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msub></mfrac></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>n</mi><mo>&gt;</mo><mn>1</mn></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">f_n = \begin{cases} a &amp; n = 0  \\b &amp; n = 1 \\ \frac{(1 + f_{n-1})} {f_{n-2}} &amp; n &gt; 1\end{cases}
@@ -271,10 +279,10 @@ int main(void) {
 </code></pre>
 <h1 id="d-光的反射">D 光的反射</h1>
 <p>众所周知，光会反射，如下图</p>
-<figure data-type="image" tabindex="1"><img src="http://39.105.86.32/public/upload/fad87b7fbf.jpg" alt="光.jpg" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="http://172.18.156.134/upload/image/20201213/20201213135712_33357.jpg" alt="光.jpg" loading="lazy"></figure>
 <p>现定义反射面为x轴，给出A点和B点的坐标，求O点的坐标</p>
 <p>下图是样例的解释</p>
-<figure data-type="image" tabindex="2"><img src="http://39.105.86.32/public/upload/2927f3c8d5.png" alt="sample1.png" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="http://172.18.156.134/upload/image/20201213/20201213135727_98595.png" alt="sample1.png" loading="lazy"></figure>
 <h2 id="分析-3">分析</h2>
 <p>让<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>B</mi><mo mathvariant="normal">′</mo></msup></mrow><annotation encoding="application/x-tex">B&#x27;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.751892em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span>为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span>点关于<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span>轴对称的点</p>
 <p>那么<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi></mrow><annotation encoding="application/x-tex">O</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span></span></span></span>点即为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span></span></span></span>与<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>B</mi><mo mathvariant="normal">′</mo></msup></mrow><annotation encoding="application/x-tex">B&#x27;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.751892em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span>所连成的直线与<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span>轴的交点</p>
