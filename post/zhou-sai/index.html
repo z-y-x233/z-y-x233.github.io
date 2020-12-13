@@ -15,14 +15,16 @@
     
 
   <meta name="description" content="写在前面：可能会有些代码头文件是c++的，那是因为我懒，不想改了，代码都是纯c的，复制代码别问为啥报错
+目录在右下角
 A 递归式
 题目描述
-fn={an=0bn=1(1+fn−1)fn−2n&amp;gt;1f_n = \begin{cases} a &amp;amp;..." />
+fn={an=0bn=1(1+fn−1)fn−2n&amp;gt;1f_n = \begin{cases} ..." />
   <meta property="og:title" content="题解 2020级HAUT新生周赛(三) - 咸鱼のblog">
   <meta property="og:description" content="写在前面：可能会有些代码头文件是c++的，那是因为我懒，不想改了，代码都是纯c的，复制代码别问为啥报错
+目录在右下角
 A 递归式
 题目描述
-fn={an=0bn=1(1+fn−1)fn−2n&amp;gt;1f_n = \begin{cases} a &amp;amp;..." />
+fn={an=0bn=1(1+fn−1)fn−2n&amp;gt;1f_n = \begin{cases} ..." />
   <meta property="og:type" content="articles">
   <meta property="og:url" content="https://z-y-x233.github.io/post/zhou-sai/" />
   <meta property="og:image" content="https://z-y-x233.github.io/images/avatar.png">
@@ -30,9 +32,10 @@ fn={an=0bn=1(1+fn−1)fn−2n&amp;gt;1f_n = \begin{cases} a &amp;amp;..." />
   <meta property="og:image:width" content="1200">
   <meta name="twitter:title" content="题解 2020级HAUT新生周赛(三) - 咸鱼のblog">
   <meta name="twitter:description" content="写在前面：可能会有些代码头文件是c++的，那是因为我懒，不想改了，代码都是纯c的，复制代码别问为啥报错
+目录在右下角
 A 递归式
 题目描述
-fn={an=0bn=1(1+fn−1)fn−2n&amp;gt;1f_n = \begin{cases} a &amp;amp;...">
+fn={an=0bn=1(1+fn−1)fn−2n&amp;gt;1f_n = \begin{cases} ...">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://z-y-x233.github.io/post/zhou-sai/">
 
@@ -69,7 +72,8 @@ fn={an=0bn=1(1+fn−1)fn−2n&amp;gt;1f_n = \begin{cases} a &amp;amp;...">
           
         </div>
         <div class="markdown mb-8" v-pre>
-          <p><strong>写在前面</strong>：可能会有些代码头文件是c++的，那是因为我懒，不想改了，代码都是纯c的，复制代码别问为啥报错</p>
+          <p><strong>写在前面</strong>：可能会有些代码头文件是c++的，那是因为我懒，不想改了，代码都是纯c的，复制代码别问为啥报错<br>
+<strong>目录在右下角</strong></p>
 <h1 id="a-递归式">A 递归式</h1>
 <h2 id="题目描述">题目描述</h2>
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>=</mo><mrow><mo fence="true">{</mo><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>a</mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>b</mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mfrac><mrow><mo>(</mo><mn>1</mn><mo>+</mo><msub><mi>f</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>)</mo></mrow><msub><mi>f</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msub></mfrac></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>n</mi><mo>&gt;</mo><mn>1</mn></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">f_n = \begin{cases} a &amp; n = 0  \\b &amp; n = 1 \\ \frac{(1 + f_{n-1})} {f_{n-2}} &amp; n &gt; 1\end{cases}
@@ -481,7 +485,7 @@ int f(int sta){
 }
 
 int main() {
-	cin &gt;&gt; n;
+	scanf(&quot;%d&quot;,&amp;n);
 	for (int i = 0; i &lt; n; ++i){
 		scanf(&quot;%d&quot;,&amp;a[i]);
 	}
